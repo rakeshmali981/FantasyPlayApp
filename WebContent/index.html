@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hi Player</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/FantasyPlay/Resources/CSS/angular-material.min.css">
+  <link rel="stylesheet" href="/FantasyPlay/Resources/CSS/style.css">
+</head>
+<body ng-app="fantasyApp" ng-controller="homeController">
+<div id="mainHeader">
+<div>
+<h1>Hi {{playerName}},</h1>
+<h2>Make your Team and dive into FantasyPlay world</h2>
+</div>
+
+<md-nav-bar  m-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+      
+      <md-nav-item md-nav-click="goto('/dashboard')"  ng-click="currentNavItem==dashboard" name="dashboard">Dashboard</md-nav-item>
+      <md-nav-item md-nav-click="goto('/pickYourTeam')" ng-click="currentNavItem==pickYourTeam" name="pickYourTeam">Pick Your Team</md-nav-item>
+      <md-nav-item md-nav-click="goto('/teams')" ng-click="currentNavItem==teams" name="teams">Teams</md-nav-item>
+      <md-nav-item md-nav-click="goto('/schedule')"" ng-click="currentNavItem==schedule" name="schedule">Schedule</md-nav-item>
+</md-nav-bar>
+</div>
+<aside>This section will contain past match data and upcoming match data</aside>
+<section id="mainView">
+<div ng-view></div>
+</section>
+
+
+
+<footer>This site belongs to FantasyPlay </footer>
+	<script
+		src="/FantasyPlay/Resources/JS/angular.min.js"></script>
+	<script
+		src="/FantasyPlay/Resources/JS/angular-animate.min.js"></script>
+	<script
+		src="/FantasyPlay/Resources/JS/angular-aria.min.js"></script>
+	<script
+		src="/FantasyPlay/Resources/JS/angular-material.min.js"></script>
+	<script
+		src="/FantasyPlay/Resources/JS/angular-messages.min.js"></script>
+	<script
+		src="/FantasyPlay/Resources/JS/angular-route.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/app.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/controller/dashController.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/controller/pytController.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/controller/scheduleController.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/controller/teamController.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/controller/dialogCtrl.js"></script>
+	<script
+		src="/FantasyPlay/FantasyApp/service/service.js"></script>
+</body>
+</html>

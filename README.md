@@ -1,1 +1,1 @@
-# FantasyPlayApp
+# FantasyPlay

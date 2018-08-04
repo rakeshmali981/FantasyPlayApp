@@ -1,0 +1,20 @@
+<div id="teams">
+
+<div layout="row" layout-wrap>
+<md-card  ng-repeat="team in teams track by $index" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{team.name}}</span>
+            <span class="md-subhead">Captain: {{team.captain}}</span>
+            <span class="md-subhead">{{team.location}}</span>
+          </md-card-title-text>
+          <!-- <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+          </md-card-title-media> -->
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="teamDetails($index)">Know More</md-button>
+        </md-card-actions>
+</md-card>
+</div>
+</div>

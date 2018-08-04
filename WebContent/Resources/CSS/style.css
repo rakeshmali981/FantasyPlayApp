@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.mainHeader {
+	position : fixed;
+	top: 0;
+	width: 100%;
+	min-height: 200px;
+}
+
+.mainHeader h1, h2 {
+	margin: 1%;
+	padding: 1%;
+}
+
+.mainHeader h2, h1 {
+	margin: 1%;
+	padding: 1%;
+}
+
+
+footer{
+	position : fixed;
+	bottom: 0;
+}
+
+aside{
+	float: right;
+	width: 25%;
+	top: 200px;
+}
+
+section #mainview{
+	float: right;
+	wodth: 75%;
+	top:200px
+}
+
+
+/*Teams page style starts here*/
+#teams md-card {
+	width: 31%;
+}
+/*Teams page style ends here*/
